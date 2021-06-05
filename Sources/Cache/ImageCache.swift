@@ -720,7 +720,7 @@ open class ImageCache {
     /// It will be called automatically when `UIApplicationDidEnterBackgroundNotification` received.
     @objc public func backgroundCleanExpiredDiskCache() {
         // if 'sharedApplication()' is unavailable, then return
-        guard let sharedApplication = KingfisherWrapper<UIApplication>.shared else { return }
+        /*guard let sharedApplication = KingfisherWrapper<UIApplication>.shared else { return }
 
         func endBackgroundTask(_ task: inout UIBackgroundTaskIdentifier) {
             sharedApplication.endBackgroundTask(task)
@@ -734,7 +734,7 @@ open class ImageCache {
         
         cleanExpiredDiskCache {
             endBackgroundTask(&backgroundTask!)
-        }
+        }*/
     }
 #endif
 
